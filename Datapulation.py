@@ -4,4 +4,4 @@ class Datapulation:
 
     def Catcols(self):
         columns = self.data.columns
-        return [col for col in columns if type(data[col] == 'O')]
+        return [col for col in columns if self.data[col].dtype == 'O']
